@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Number 1 <input type="text" id="anum" name="a"><br />
+    Number 2 <input type="text" id="bnum" name="b"><br />
+    Operator <input type="text" id="op" name="op"><br />
+    Result <input type="text" id="res"><br />
+    <input type="submit" value=" Result " id="btnRes" onclick="goCalc()"><br />
+    <script type="text/javascript">
+
+        function goCalc()
+        {
+            var c = anum.value;
+            var e = bnum.value;
+            var b = op.value;
+            res.value = CalcN(c, e, b);
+        };
+
+        function CalcN(a1, a2, op)
+        {
+            var req = "num1="+a1+"&num2="+a2+"&opt="+op;
+            var rr = new XMLHttpRequest();
+            rr.open('POST', 'http://localhost:56569/WebService.asmx/Calc', false);
+            rr.send(req);
+            return rr.responseText;
+        };
+    </script>
+</body>
+</html>

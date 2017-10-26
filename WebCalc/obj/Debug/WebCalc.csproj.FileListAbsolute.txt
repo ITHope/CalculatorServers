@@ -1,0 +1,9 @@
+D:\2017.10.22\CalculatorWebApi\WebCalc\bin\WebCalc.dll.config
+D:\2017.10.22\CalculatorWebApi\WebCalc\bin\WebCalc.dll
+D:\2017.10.22\CalculatorWebApi\WebCalc\bin\WebCalc.pdb
+D:\2017.10.22\CalculatorWebApi\WebCalc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\2017.10.22\CalculatorWebApi\WebCalc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\2017.10.22\CalculatorWebApi\WebCalc\obj\Debug\WebCalc.csprojResolveAssemblyReference.cache
+D:\2017.10.22\CalculatorWebApi\WebCalc\obj\Debug\WebCalc.csproj.CoreCompileInputs.cache
+D:\2017.10.22\CalculatorWebApi\WebCalc\obj\Debug\WebCalc.dll
+D:\2017.10.22\CalculatorWebApi\WebCalc\obj\Debug\WebCalc.pdb
