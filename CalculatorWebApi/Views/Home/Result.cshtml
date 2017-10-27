@@ -1,0 +1,36 @@
+﻿
+@*@{
+    ViewBag.Title = "Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Result</h2>*@
+
+
+<form action="@Url.Action("Result", "Home")" method="post">
+    <table>
+        <tr>
+            <td>
+                <input type="text" id="arg1" name="arg1" />
+            </td>
+            <td>
+                <select>
+                    <option></option>
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" id="arg2" name="arg2" />
+            </td>
+            <td>
+                <input type="submit" value="=" />
+            </td>
+            <td>
+                <span></span>
+            </td>
+        </tr>
+    </table>
+</form>

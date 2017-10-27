@@ -1,0 +1,42 @@
+﻿
+@*@{
+    ViewBag.Title = "Calc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Calc</h2>*@
+
+@model Calculator.Models.TResult
+@{
+    ViewBag.Title = "Calc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Calc", "Home"))
+{
+    <table>
+        <tr>
+            <td>
+                <input type="text" id="arg1" name="arg1" value="@Model.arg1" />
+            </td>
+            <td>
+                <select name="math">
+                    <option></option>
+                    <option @(Model.math == "+" ? "selected='selected'" : "")>+</option>
+                    <option @(Model.math == "-" ? "selected='selected'" : "")>-</option>
+                    <option @(Model.math == "*" ? "selected='selected'" : "")>*</option>
+                    <option @(Model.math == "/" ? "selected='selected'" : "")>/</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" id="arg2" name="arg2" value="@Model.arg2" />
+            </td>
+            <td>
+                <input type="submit" value="=" />
+            </td>
+            <td>
+                <span>@Model.result</span>
+            </td>
+        </tr>
+    </table>
+}
